@@ -24,5 +24,7 @@ Se consume el servicio de Spotify, el cual le retornará una lista de géneros, 
 * Crear una nueva aplicación en la consola de desarrolladores de Spotify
 * Establezca la URL de redirección en ```http://localhost:8080/callback```
 * Copie el ID de cliente generado para la aplicación anterior junto con redirect-uri y configúrelos en el archivo application.properties
-```com.test.spotify.app.client-id=37287ed01cad4bbb9db3f63d4ea5c442```
-```com.test.spotify.app.redirect-url=http://localhost:8080/callback```
+```
+com.test.spotify.app.client-id=<Client-id>
+com.test.spotify.app.redirect-url=<Redirect-URI>
+```
