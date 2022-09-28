@@ -19,3 +19,8 @@ Se consume el servicio de Spotify, el cual le retornará una lista de géneros, 
 # Recursos
 * Url configuración developer spotify (Creación de cuenta y obtener token) ```https://stackoverflow.com/questions/60659902/how-to-get-oauth-token-from-spotify```
 * Postman con categorías musicales ```https://www.getpostman.com/collections/471a33c7a5aeb75f5d2c```
+
+# Configuración de la aplicación Spotify
+* Crear una nueva aplicación en la consola de desarrolladores de Spotify
+* Establezca la URL de redirección en ```http://localhost:8080/callback```
+* Copie el ID de cliente generado para la aplicación anterior junto con redirect-uri y configúrelos en el archivo application.properties
