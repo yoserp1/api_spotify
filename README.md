@@ -8,3 +8,10 @@ Se consume el servicio de Spotify, el cual le retornará una lista de géneros, 
 * Thymeleaf
 * Lombok
 * RestTemplate
+
+## Como correrlo
+
+* Clonar este repositorio
+* Asegúrese de estar usando JDK 1.8 y Maven 3.x
+* Puede compilar el proyecto y ejecutar las pruebas ejecutando ```mvn clean package```
+* Para mas comodidad ejecutar desde un IDE ejemplo: Eclipse
