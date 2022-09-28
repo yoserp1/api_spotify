@@ -15,7 +15,7 @@ import lombok.RequiredArgsConstructor;
 
 @Service
 @RequiredArgsConstructor
-public class ProfileDetailService {
+public class PerfilService {
 	
 	private final RestTemplate restTemplate;
 

@@ -3,8 +3,8 @@ package com.test.spotify.app.constantes;
 public class Template {
 	
 	public static final String INDEX = "inicio";
-	public static final String CALLBACK_EXITO = "callback-exito";
-	public static final String CALLBACK_FALLO = "callback-fallo";
+	public static final String CALLBACK_EXITO = "callback_exito";
+	public static final String CALLBACK_FALLO = "callback_fallo";
 	public static final String FEATURED_PLAYLISTS = "featured-playlists";
 	
 	public static final String ERROR = "error";

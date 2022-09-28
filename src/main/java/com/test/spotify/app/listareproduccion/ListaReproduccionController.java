@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.test.spotify.app.autenticar.AccessTokenService;
-import com.test.spotify.app.autenticar.ProfileDetailService;
+import com.test.spotify.app.autenticar.PerfilService;
 import com.test.spotify.app.autenticar.SpotifyUrlService;
 import com.test.spotify.app.constantes.ApiPath;
 import com.test.spotify.app.constantes.Template;
@@ -23,7 +23,7 @@ public class ListaReproduccionController {
 	
 	private final SpotifyUrlService spotifyUrlService;
 	private final AccessTokenService accessToken;
-	private final ProfileDetailService userDetails;
+	private final PerfilService perfil;
 	private final CurrentPlayingService currentPlaying;
 
 	@GetMapping(value = "/", produces = MediaType.TEXT_HTML_VALUE)
@@ -47,7 +47,7 @@ public class ListaReproduccionController {
 	
 			session.setAttribute("accessToken", token);
 			model.addAttribute("accessToken", token);
-			model.addAttribute("userName", userDetails.getUsername(token));
+			model.addAttribute("userName", perfil.getUsername(token));
 	
 			try {
 				model.addAttribute("currentPlaying", currentPlaying.getCurrentPlaying(token));
