@@ -34,7 +34,7 @@ mvn clean install
 ```
 mvn spring-boot:run
 ```
-* El puerto del servidor está configurado en 9090, que se puede cambiar en el archivo application.properties
+* El puerto del servidor está configurado en 8080, que se puede cambiar en el archivo application.properties
 * Vaya a la siguiente URL para ver la aplicación
 ```
 http://localhost:8080
