@@ -1,0 +1,12 @@
+{"properties": [
+  {
+    "name": "com.test.spotify.app.client-id",
+    "type": "java.lang.String",
+    "description": "A description for 'com.test.spotify.app.client-id'"
+  },
+  {
+    "name": "com.test.spotify.app.redirect-url",
+    "type": "java.lang.String",
+    "description": "A description for 'com.test.spotify.app.redirect-url'"
+  }
+]}
