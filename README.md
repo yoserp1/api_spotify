@@ -8,6 +8,7 @@ Se consume el servicio de Spotify, el cual le retornará una lista de géneros, 
 * Thymeleaf
 * Lombok
 * RestTemplate
+* Hibernate
 
 # Recursos
 * Url configuración developer spotify (Creación de cuenta y obtener token) ```https://stackoverflow.com/questions/60659902/how-to-get-oauth-token-from-spotify```
