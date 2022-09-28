@@ -2,6 +2,9 @@ package com.test.spotify.app.constantes;
 
 public class ApiPath {
 	
+	public static final String URL_API_TOKEN = "https://accounts.spotify.com/api/token";
+	public static final String URL_PERFIL = "https://api.spotify.com/v1/me";
+	public static final String URL_REPRODUCCION_ACTUAL = "https://api.spotify.com/v1/me/player/currently-playing";
 	public static final String CALLBACK = "/callback";
 	public static final String FEATURED_PLAYLIST = "/featuredPlaylists";
 	public static final String LOGOUT = "/logout";

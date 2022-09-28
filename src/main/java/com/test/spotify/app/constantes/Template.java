@@ -2,10 +2,11 @@ package com.test.spotify.app.constantes;
 
 public class Template {
 	
-	public static final String CALLBACK_SUCCESS = "callback-success";
-	public static final String CALLBACK_FAILURE = "callback-failure";
-	public static final String FEATURED_PLAYLISTS = "featured-playlists";
 	public static final String INDEX = "inicio";
+	public static final String CALLBACK_EXITO = "callback-exito";
+	public static final String CALLBACK_FALLO = "callback-fallo";
+	public static final String FEATURED_PLAYLISTS = "featured-playlists";
+	
 	public static final String ERROR = "error";
 	public static final String NEW_RELEASES = "new-releases";
 	public static final String RECENT_TRACKS = "recent-tracks";

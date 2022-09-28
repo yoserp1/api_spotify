@@ -11,6 +11,7 @@ import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
 
 import com.test.spotify.app.configuracion.AppConfiguracionProperties;
+import com.test.spotify.app.constantes.ApiPath;
 
 import lombok.RequiredArgsConstructor;
 
@@ -22,7 +23,6 @@ public class AccessTokenService {
 	private final SpotifyUrlService spotifyUrlService;
 	private final RestTemplate restTemplate;
 	private final AppConfiguracionProperties spotifyAppConfigurationProperties;
-	private static final String URL = "https://accounts.spotify.com/api/token";
 	
 	public String getToken(String code) {
 		final var properties = spotifyAppConfigurationProperties.getApp();
@@ -38,7 +38,7 @@ public class AccessTokenService {
 
 		HttpEntity<MultiValueMap<String, String>> request = new HttpEntity<>(map, headers);
 
-		ResponseEntity<AccessTokenDto> response = restTemplate.postForEntity(URL, request, AccessTokenDto.class);
+		ResponseEntity<AccessTokenDto> response = restTemplate.postForEntity(ApiPath.URL_API_TOKEN, request, AccessTokenDto.class);
 		return response.getBody().getAccessToken();
 	}
 
